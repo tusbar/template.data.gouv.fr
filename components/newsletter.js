@@ -5,7 +5,7 @@ export default () => (
     <form action='' method='post' name='form' target='_blank' noValidate>
       <div className='group'>
         <label htmlFor='email'>Pour être informé des nouveautés, inscrivez-vous à notre newsletter :</label>
-        <input type='email' value='' name='email' id='email' />
+        <input type='email' name='email' id='email' />
       </div>
 
       <Button name='subscribe'>Valider</Button>

@@ -1,3 +1,4 @@
+import theme from '../styles/theme'
 import Container from './container'
 
 export default () => (
@@ -25,8 +26,8 @@ export default () => (
 
     <style jsx>{`
       footer {
-        background: var(--theme-background-dark);
-        color: var(--white);
+        background: ${theme.backgroundDark};
+        color: ${theme.colors.white};
         padding: 2em 0;
         line-height: 2em;
       }

@@ -12,7 +12,7 @@ export default () => (
       tagline='Tagline libérer les données sans effort et sur data.gouv.fr'
     />
 
-    <Section title='Titre de section' subtitle='Sous-titre de section' theme='dark'>
+    <Section title='Titre de section' subtitle='Sous-titre de section' background='dark'>
       <Row>
         <Col>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Col>
         <Col>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Col>
@@ -29,7 +29,7 @@ export default () => (
       </Row>
     </Section>
 
-    <Section title='Titre de section' subtitle='Sous-titre de section' theme='color'>
+    <Section title='Titre de section' subtitle='Sous-titre de section' background='color'>
       <Row>
         <Col>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Col>
         <Col>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Col>
@@ -37,7 +37,7 @@ export default () => (
       </Row>
     </Section>
 
-    <Section theme='grey'>
+    <Section background='grey'>
       <Newsletter />
     </Section>
 

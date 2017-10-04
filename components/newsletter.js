@@ -1,3 +1,4 @@
+import theme from '../styles/theme'
 import Button from './button'
 
 export default () => (
@@ -34,7 +35,7 @@ export default () => (
         padding: 16px 20px;
         font: inherit;
         line-height: 1.6;
-        color: var(--black);
+        color: ${theme.colors.black}
         border-radius: 2px;
       }
     `}</style>

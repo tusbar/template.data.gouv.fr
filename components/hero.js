@@ -1,3 +1,4 @@
+import theme from '../styles/theme'
 import Container from './container'
 
 export default ({title, tagline}) => (
@@ -11,7 +12,7 @@ export default ({title, tagline}) => (
         min-height: 18em;
         width: 100%;
         color: #fff;
-        background-color: var(--theme-background-grey);
+        background-color: ${theme.backgroundGrey};
         background-blend-mode: darken;
         background-image: url(/static/images/background.jpg);
         background-size: cover;
@@ -22,6 +23,7 @@ export default ({title, tagline}) => (
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        color: ${theme.darkText};
       }
 
       .white {
@@ -31,12 +33,10 @@ export default ({title, tagline}) => (
 
       h1 {
         margin: 0 0 0.5em;
-        color: var(--theme-dark-text);
       }
 
       p {
         margin: 0;
-        color: var(--theme-dark-text);
         font-size: 1.2em;
         font-style: italic;
       }

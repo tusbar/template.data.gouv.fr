@@ -1,6 +1,7 @@
 import Head from 'next/head'
 
-import Theme from './styles/theme'
+import theme from '../styles/theme'
+
 import Fonts from './styles/fonts'
 
 export default () => (
@@ -36,7 +37,6 @@ export default () => (
       <meta name='og:type' content='website' />
     </Head>
 
-    <Theme />
     <Fonts />
 
     <style jsx global>{`
@@ -51,7 +51,7 @@ export default () => (
         overflow: auto;
         font-family: "Source Sans Pro", Arial, sans-serif;
         font-size: 15px;
-        background: var(--theme-background-grey);
+        background: ${theme.backgroundGrey};
       }
 
       h1,
@@ -73,7 +73,7 @@ export default () => (
       a:focus,
       a:visited,
       a:active {
-        color: var(--theme-primary);
+        color: ${theme.primary};
         text-decoration: none;
       }
     `}</style>

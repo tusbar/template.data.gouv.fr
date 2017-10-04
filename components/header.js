@@ -1,3 +1,4 @@
+import theme from '../styles/theme'
 import Link from 'next/link'
 
 export default ({fixed = false}) => (
@@ -19,7 +20,7 @@ export default ({fixed = false}) => (
 
     <style jsx>{`
       nav {
-        box-shadow: 0 1px 4px var(--theme-box-shadow);
+        box-shadow: 0 1px 4px ${theme.boxShadow};
         width: 100%;
         background: #fff;
         z-index: 100;
@@ -60,7 +61,7 @@ export default ({fixed = false}) => (
       }
 
       .links a {
-        color: var(--black)
+        color: ${theme.colors.black};
       }
 
       @media (max-width: 550px) {

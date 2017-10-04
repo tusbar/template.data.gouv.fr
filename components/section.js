@@ -1,7 +1,8 @@
+import theme from '../styles/theme'
 import Container from './container'
 
-export default ({title, subtitle, children, theme = 'white'}) => (
-  <section className={`section-${theme}`}>
+export default ({title, subtitle, children, background = 'white'}) => (
+  <section className={`section-${background}`}>
     <Container>
       {title && <h2 className='title'>{title}</h2>}
       {subtitle && <p className='subtitle'>{subtitle}</p>}
@@ -15,23 +16,23 @@ export default ({title, subtitle, children, theme = 'white'}) => (
       }
 
       .section-white {
-        background-color: var(--theme-background-white);
-        color: var(--black);
+        background-color: ${theme.backgroundWhite};
+        color: ${theme.colors.black};
       }
 
       .section-grey {
-        background-color: var(--theme-background-grey);
-        color: var(--black);
+        background-color: ${theme.backgroundGrey};
+        color: ${theme.colors.black};
       }
 
       .section-dark {
-        background-color: var(--theme-background-dark);
-        color: #fff;
+        background-color: ${theme.backgroundDark};
+        color: ${theme.colors.white};
       }
 
       .section-color {
-        background-color: var(--theme-background-color);
-        color: #fff;
+        background-color: ${theme.backgroundColor};
+        color: ${theme.colors.white};
       }
 
       .subtitle {

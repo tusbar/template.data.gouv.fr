@@ -1,3 +1,5 @@
+import theme from '../styles/theme'
+
 export default ({type = 'submit', name, children}) => (
   <button type={type} name={name}>
     {children}
@@ -11,8 +13,8 @@ export default ({type = 'submit', name, children}) => (
         margin: 0 auto;
         padding: 0.85em 3em;
         color: #fff;
-        background-color: var(--theme-secondary);
-        border-bottom: 1px solid var(--theme-border);
+        background-color: ${theme.secondary};
+        border-bottom: 1px solid ${theme.border};
         border-radius: 2px;
         box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
         border: 1px solid transparent;
@@ -25,7 +27,7 @@ export default ({type = 'submit', name, children}) => (
 
       button:hover {
         text-decoration: none;
-        box-shadow: inset 0 0 0 2em var(--theme-secondary-darken);
+        box-shadow: inset 0 0 0 2em ${theme.secondaryDarken};
       }
 
       .button:active {

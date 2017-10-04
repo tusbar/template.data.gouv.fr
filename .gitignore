@@ -1,8 +1,5 @@
 node_modules
-dist/*
-!dist/.gitkeep
 yarn-error.log
-/main.css
 
 .DS_Store
 .AppleDouble
@@ -14,3 +11,7 @@ Icon
 
 # Thumbnails
 ._*
+
+# Next.js
+.next
+out

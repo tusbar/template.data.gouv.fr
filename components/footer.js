@@ -61,7 +61,7 @@ export default () => (
         margin: 0;
       }
 
-      .social h2 {
+      .links h2 {
         margin-top: 0;
         margin-bottom: 0.5em;
       }

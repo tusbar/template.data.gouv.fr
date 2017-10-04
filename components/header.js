@@ -38,7 +38,7 @@ export default ({fixed = false}) => (
       }
 
       .logo {
-        height: 40px;
+        height: 70px;
         padding: 1em;
       }
 

@@ -36,7 +36,6 @@ export default () => (
         line-height: 1.6;
         color: var(--black);
         border-radius: 2px;
-        box-sizing: border-box;
       }
     `}</style>
   </div>

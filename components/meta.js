@@ -40,6 +40,10 @@ export default () => (
     <Fonts />
 
     <style jsx global>{`
+      * {
+        box-sizing: border-box;
+      }
+
       body {
         padding: 0;
         margin: 0;

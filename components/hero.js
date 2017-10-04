@@ -1,12 +1,12 @@
+import Container from './container'
+
 export default ({title, tagline}) => (
-  <div className='hero'>
-    <div className='container'>
-      <h1 className='white'>Titre chili con carne</h1>
-      <p className='white'>Tagline libérer les données sans effort et sur data.gouv.fr</p>
-    </div>
+  <div>
+    <h1 className='white'>Titre chili con carne</h1>
+    <p className='white'>Tagline libérer les données sans effort et sur data.gouv.fr</p>
 
     <style jsx>{`
-      .hero {
+      div {
         height: 38vh;
         min-height: 18em;
         width: 100%;
@@ -18,15 +18,10 @@ export default ({title, tagline}) => (
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
-      }
-
-      .container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100%;
-        box-sizing: border-box;
       }
 
       .white {

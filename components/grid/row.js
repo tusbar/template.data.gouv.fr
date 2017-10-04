@@ -14,6 +14,7 @@ export default ({children}) => (
 
       @media (max-width: 550px) {
         div {
+          margin: 0;
           flex-direction: column;
         }
 
